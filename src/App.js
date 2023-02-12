@@ -5,6 +5,7 @@ import store from "./redux/store";
 import HooksPhoneContainer from "./component/PhoneContainer/HooksPhoneContainer";
 import HooksWatchContainer from "./component/watchContainer/watchContainer";
 import PhoneWithPayloadContainer from "./component/PhoneContainer/PhoneWithPayloadContainer";
+import UserContainer from "./component/UserContainer/UserContainer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <HooksPhoneContainer />
         <PhoneWithPayloadContainer />
         <HooksWatchContainer />
+        <UserContainer/>
       </div>
     </Provider>
   );
