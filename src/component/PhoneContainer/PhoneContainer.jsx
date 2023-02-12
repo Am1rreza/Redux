@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { buyPhone } from "../redux/phone/phoneActions";
+import { buyPhone } from "../../redux/phone/phoneActions";
 
 const PhoneContainer = ({ numOfPhones, buyPhone }) => {
   return (
