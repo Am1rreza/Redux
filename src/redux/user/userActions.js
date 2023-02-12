@@ -31,10 +31,10 @@ const fetchUsers = () => {
   return function (dispatch) {
     dispatch(fetchUserRequest());
     axios
-      .get("https://jsonplacefholder.typicode.com/users")
+      .get("https://jsonplaceholder.typicode.com/users")
       .then((res) => {
-        const usersId = res.data.map((user) => user.id);
-        dispatch(fetchUserSuccess(usersId));
+        const users = res.data;
+        dispatch(fetchUserSuccess(users));
       })
       .catch((error) => dispatch(fetchUserFailure(error.message)));
   };
