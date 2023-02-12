@@ -7,7 +7,7 @@ const HooksPhoneContainer = () => {
 
   return (
     <div>
-      <h2>Number of Phones : {numOfPhones}</h2>
+      <h2>Phone with Hooks : {numOfPhones}</h2>
       <button onClick={() => dispatch(buyPhone())}>Buy a Phone</button>
     </div>
   );
