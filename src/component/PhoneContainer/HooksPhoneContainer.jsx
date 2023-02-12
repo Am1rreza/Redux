@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { buyPhone } from "../../redux/phone/phoneActions";
 
 const HooksPhoneContainer = () => {
-  const numOfPhones = useSelector((state) => state.numOfPhones);
+  const numOfPhones = useSelector((state) => state.phone.numOfPhones);
   const dispatch = useDispatch();
 
   return (

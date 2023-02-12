@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { buyWatch } from "../../redux/watch/watchActions";
 
 const HooksWatchContainer = () => {
-  const numOfWatches = useSelector((state) => state.numOfWatches);
+  const numOfWatches = useSelector((state) => state.watch.numOfWatches);
   const dispatch = useDispatch();
 
   return (

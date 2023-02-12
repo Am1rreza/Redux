@@ -13,7 +13,7 @@ const PhoneContainer = ({ numOfPhones, buyPhone }) => {
 // Get the global state
 const mapStateToProps = (state) => {
   return {
-    numOfPhones: state.numOfPhones,
+    numOfPhones: state.phone.numOfPhones,
   };
 };
 
